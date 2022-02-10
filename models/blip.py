@@ -149,7 +149,7 @@ class BLIP_Decoder(nn.Module):
                                                   num_return_sequences=1,
                                                   eos_token_id=self.tokenizer.sep_token_id,
                                                   pad_token_id=self.tokenizer.pad_token_id, 
-                                                  repetition_penalty=1.1,                                            
+                                                  repetition_penalty=repetition_penalty,                                            
                                                   **model_kwargs)
         else:
             #beam search
