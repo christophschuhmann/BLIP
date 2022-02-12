@@ -9,7 +9,7 @@ try:
   os.mkdir(target_dir)
 except:
   pass
-!pip install language_tool_python
+
 from PIL import Image
 import numpy as np
 import torch
@@ -64,11 +64,7 @@ def clip_rank(image_pil,text_list, clip_model="ViT-L/14"):
 
 
 import sys
-if 'google.colab' in sys.modules:
-    print('Running in Colab.')
-    #!pip3 install transformers==4.15.0 timm==0.4.12 fairscale==0.4.4
-    #!git clone https://github.com/salesforce/BLIP
-    %cd BLIP
+
 from PIL import Image
 import requests
 import torch
