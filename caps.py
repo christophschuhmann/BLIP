@@ -68,7 +68,7 @@ if 'google.colab' in sys.modules:
     print('Running in Colab.')
     #!pip3 install transformers==4.15.0 timm==0.4.12 fairscale==0.4.4
     #!git clone https://github.com/salesforce/BLIP
-    %cd BLIP
+    #%cd BLIP
 from PIL import Image
 import requests
 import torch
@@ -241,5 +241,4 @@ with torch.no_grad():
     #close file
     text_file.close()
     print(time.time()-start)
-
 
